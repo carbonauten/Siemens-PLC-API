@@ -1,5 +1,10 @@
-from plc_client import PLCClient, PLCConfig
-from app import app, plc_client
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from plc_client import PLCClient, PLCConfig  # type: ignore
+from app import app, plc_client  # type: ignore
 
 
 def test_health_ok():
