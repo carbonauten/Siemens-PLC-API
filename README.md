@@ -24,3 +24,7 @@ pytest -q
 python app.py
 ```
 
+## Deployment
+
+This API is deployed as the **plc-api** service from the [gitops-starter](https://github.com/carbonauten/gitops-starter) repo (Helm chart `gitops/charts/plc-api`, image `ghcr.io/carbonauten/siemens-plc-api`). Argo CD consumes the chart from that repo.
+
