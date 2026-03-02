@@ -1,13 +1,13 @@
 import os
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, Optional
 
 
 @dataclass
 class PLCConfig:
     host: str
-    rack: int | None = None
-    slot: int | None = None
+    rack: Optional[int] = None
+    slot: Optional[int] = None
 
 
 class PLCClient:
